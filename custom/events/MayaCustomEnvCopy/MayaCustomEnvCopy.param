@@ -1,0 +1,26 @@
+[State]
+Type=Enum
+Items=Global Enabled;Opt-In;Disabled
+Label=State
+Default=Disabled
+Description=How this event plug-in should respond to events. If Global, all jobs and slaves will trigger the events for this plugin. If Opt-In, jobs and slaves can choose to trigger the events for this plugin. If Disabled, no events are triggered for this plugin.
+
+[UnwantedEnvKeys]
+Type=MultiLineString
+Label=Unwanted Environment Keys
+Description=Environment Keys to be ignored in the copy
+Category=Options
+CategoryOrder=0
+CategoryIndex=1
+DisableIfBlank=false
+Default=
+
+[WantedEnvKeys]
+Type=MultiLineString
+Label=Wanted Environment Keys
+Description=Environment Keys to be used in the copy
+Category=Options
+CategoryOrder=0
+CategoryIndex=2
+DisableIfBlank=false
+Default=
